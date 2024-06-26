@@ -10,7 +10,9 @@ class $modify(LevelAreaInnerLayer) {
 		auto mainMenu = this->getChildByID("main-node");
 
 		if(mainMenu){
-			
+			auto TowerLabel = CCLabelBMFont::create("Goober", "bigFont.fnt");
+			TowerLabel->setPosition(5,5);
+			mainMenu->addChild(TowerLabel);
 		}
 
 		return true;
